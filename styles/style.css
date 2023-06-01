@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+.header {
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    background-color: #dddddd0a;
+    backdrop-filter: blur(5px);
+    gap: 50px;
+}
+
+.header .header-logo {
+    font-size: 23px;
+}
+
+.header nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header nav ul li {
+    list-style: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header nav ul .link-pesquisa {
+    padding: 8px;
+    background-color: #141414;
+    color: white;
+    border-radius: 5px;
+}
+
+.apresentation {
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../assets/backgrounds/layered-waves-haikei\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 45vw;
+}
+
+.apresentation .apresentation-pessoa-1 {
+    position: absolute;
+    bottom: 16.43%;
+    right: 33%;
+    width: 28vw;
+    border-bottom-right-radius: 30%;
+}
+
+.apresentation .alphanox-text {
+    position: absolute;
+    bottom: -40%;
+    left: 1%;
+    width: 95vw;
+}
+
+.section-1 {
+    background-color: #131313;
+    height: 300px;
+}
