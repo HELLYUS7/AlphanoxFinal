@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +22,13 @@
     flex-direction: column;
 }
 
+.flip-horizontal {
+    transform: scaleX(-1);
+  }
+
 body {
-    background-color: #dddddd;
+    background: #dddddd;  /* fallback for old browsers */
+    overflow-x: hidden;
 }
 
 .header {
@@ -29,8 +36,11 @@ body {
     top: 0;
     position: sticky;
     padding: 10px;
+    background: #dddddd;  /* fallback for old browsers */
+    /*
     background-color: #dddddd0a;
     backdrop-filter: blur(5px);
+    */
     gap: 50px;
 }
 
@@ -69,19 +79,107 @@ body {
 .apresentation .apresentation-pessoa-1 {
     position: absolute;
     bottom: 16.43%;
-    right: 33%;
+    right: 31%;
     width: 28vw;
     border-bottom-right-radius: 30%;
+}
+
+@keyframes scroll-alphanox-text {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0.1vw);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .apresentation .alphanox-text {
     position: absolute;
     bottom: -40%;
-    left: 1%;
+    left: 2.5%;
     width: 95vw;
+    animation: scroll-alphanox-text 5s ease-in-out infinite;
+}
+
+.apresentation .dje-text {
+    position: absolute;
+    bottom: -15%;
+    left: 4.5%;
+    width: 58vw;
+    animation: scroll-alphanox-text 5s ease-in-out infinite;
+}
+
+.apresentation .article-text {
+    display: none;
+    position: absolute;
+    bottom: 56%;
+    left: 21.7%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vw;
+    animation: scroll-alphanox-text 5s ease-in-out infinite;
 }
 
 .section-1 {
+    align-items: start;
+    justify-content: start;
+    padding: 50px;
     background-color: #131313;
-    height: 300px;
+    color: #dddddd;
+    height: 600px;
+    gap: 30px;
+}
+
+.section-1 h2 {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #dddddd;
+}
+
+.section-1 p {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 80vw;
+}
+
+.section-2{
+    align-items: end;
+    height: 450px;
+    background-color: #dddddd;
+    padding: 50px;
+    padding-top: 130px;
+}
+
+.section-2 h2 {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    color: #131313;
+}
+
+.section-2 p {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.section-3 {
+    position: relative;
+    height: 500px;
+    background: #131313;  /* fallback for old browsers */
+}
+
+.section-3 img {
+    bottom: 0;
+    right: 0px;
+    position: absolute;
+    width: 350px;
+}
+
+.section-4 {
+    height: 800px;
 }
