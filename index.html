@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/showElements.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
     <title>ALPHANOX²</title>
 </head>
+
 <body>
     <header class="header displayFlex flexRow">
         <h1 class="header-logo">ALPHANOX²</h1>
         <nav>
             <ul class="displayFlex flexRow">
-                <li>Home</li>
-                <li>Trabalho Decente</li>
-                <li>Desenvolvimento</li>
-                <li class="link-pesquisa">Pesquisa</li>
+                <a href="#apresentacao">
+                    <li>Home</li>
+                </a>
+                <a href="#coreia">
+                    <li>Trabalho Decente</li>
+                </a>
+                <a href="#plano">
+                    <li>Desenvolvimento</li>
+                </a>
+                <a href="#doc">
+                    <li class="link-pesquisa">Pesquisa</li>
+                </a>
             </ul>
+            <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
         </nav>
     </header>
     <main>
-        <section class="apresentation">
+        <section class="apresentation" id="apresentacao">
             <img src="assets/imgs/DJE2023.svg" class="dje-text">
             <img src="assets/imgs/ALPHANOX.svg" class="alphanox-text">
             <h1 class="article-text">Trabalho Decente DJE 2023</h1>
             <img src="assets/imgs/pessoa-olhando-frente.png" class="apresentation-pessoa-1">
         </section>
         <section class="section-1 displayFlex flexColumn">
-            <h2>A ASCENÇÃO DA INOVAÇÃO</h2>
-            <p>
-                A proposta visionária da Equipe Alphanox é transformar a cidade de Itapetininga em um centro de excelência tecnológica e oportunidades, impulsionando o desenvolvimento econômico, atraindo investimentos e criando um ambiente propício para o surgimento de ideias brilhantes e empreendimentos inovadores. Junte-se a nós nessa jornada rumo a um futuro promissor e repleto de possibilidades!
+            <h2 class="hidden">A ASCENÇÃO DA INOVAÇÃO</h2>
+            <p class="hidden">
+                A proposta visionária da Equipe Alphanox² é transformar a cidade de Itapetininga em um centro de
+                excelência tecnológica e oportunidades, impulsionando o desenvolvimento econômico, atraindo
+                investimentos e criando um ambiente propício para o surgimento de ideias brilhantes e empreendimentos
+                inovadores. Junte-se a nós nessa jornada rumo a um futuro promissor e repleto de possibilidades!
             </p>
         </section>
-        <section class="section-2">
-            <h2>A ASCENÇÃO DA INOVAÇÃO</h2>
-            <p>
-                A proposta visionária da Equipe Alphanox² é transformar a cidade em um centro de excelência tecnológica e oportunidades, impulsionando o desenvolvimento econômico, atraindo investimentos e criando um ambiente propício para o surgimento de ideias brilhantes e empreendimentos inovadores. Junte-se a nós nessa jornada rumo a um futuro promissor e repleto de possibilidades!
+        <section class="section-2 displayFlex flexColumn" id="coreia">
+            <h2 class="hidden">UTILIZANDO UMA ESTRATÉGIA SÓLIDA</h2>
+            <p class="hidden">
+                A equipe Alphanox pesquisou os bem-sucedidos planos quinquenais da Coreia do Sul e adaptou suas melhores
+                práticas para criar um plano sólido e ambicioso de expansão industrial em Itapetininga, SP. Com o
+                objetivo de transformar a cidade em um centro próspero de desenvolvimento industrial, o plano busca
+                impulsionar o crescimento econômico, melhorar as condições de trabalho e promover avanços tecnológicos
+                na região.
             </p>
         </section>
-        <section class="section-3">
-            <img src="assets/imgs/pessoa-olhando-esquerda.png">
+        <section class="section-3 displayFlex flexColumn" id="plano">
+            <img class="pessoa-2" src="assets/imgs/pessoa-olhando-esquerda.png">
+            <h2 class="hidden">PLANO DE EXPANSÃO INDUSTRIAL</h2>
+            <p class="hidden">
+                Plano de Expansão Industrial em Itapetininga, SP: transformando a cidade em um polo industrial próspero.
+                Metas: melhorar condições de trabalho, impulsionar crescimento econômico e promover avanços tecnológicos
+                na educação. Objetivos: atrair indústrias nacionais e multinacionais de médio e grande porte.
+                Estratégias: promover urbanização, diversificar produtos e mercados, melhorar infraestrutura e
+                estabelecer parcerias público-privadas. Prepare-se para uma transformação brilhante e sustentável em
+                Itapetininga!
+            </p>
         </section>
-        <section class="section-4">
-
+        <section class="section-4 displayFlex flexColumn" id="videos">
+            <div class="container-video displayFlex flexRow hidden">
+                <div class="video-desc displayFlex flexColumn">
+                    <h3>PONTOS FORTES DE ITAPETININGA</h3>
+                    <p>
+                        Gabriel, da equipe Alphanox, apresenta um vídeo informativo sobre os pontos fortes de
+                        Itapetininga. Ele explora aspectos como a localização estratégica, infraestrutura desenvolvida e
+                        potencial de crescimento econômico da cidade. Assista ao vídeo para obter insights valiosos
+                        sobre as vantagens de investir e desenvolver negócios em Itapetininga.
+                    </p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9xV-DpZivw0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="container-video  displayFlex flexRow julia hidden">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/86goSJKUiMk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <div class="video-desc displayFlex flexColumn">
+                    <h3>PONTOS FORTES DE ITAPETININGA</h3>
+                    <p>
+                        Júlia, uma participante da equipe Alphanox, compartilha insights valiosos sobre o plano de
+                        expansão industrial desenvolvido pela equipe. Em um vídeo informativo, ela explora as
+                        estratégias e metas do plano, destacando a visão de transformar Itapetininga em um centro
+                        próspero de desenvolvimento industrial. Assista ao vídeo para obter uma compreensão mais
+                        profunda das iniciativas planejadas pela equipe Alphanox para impulsionar o crescimento
+                        econômico e promover avanços tecnológicos na região.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer displayFlex flexColumn" id="doc">
+        <h3>PLANO DE EXPANSÃO INDUSTRIAL PDF</h3>
+        <a download href="assets/doc/Plano de Expansão Industrial.pdf" class="caio">Fazer Download
+        </a>
     </footer>
 </body>
+
 </html>
