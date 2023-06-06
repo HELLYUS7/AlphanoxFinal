@@ -443,6 +443,10 @@ body {
     .julia {
         flex-direction: column-reverse;
     }
+    
+    .footer a {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 732px) and (min-width: 450px) {
